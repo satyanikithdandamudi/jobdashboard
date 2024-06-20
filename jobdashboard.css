@@ -10,9 +10,25 @@ body {
 .navbar-nav .dropdown:hover .dropdown-toggle::after {
     transform: rotate(90deg);
 }
+.navbarlogo{
+    width: 160px;
+    height: 45px;
+}
 .homepagehead1{
-    font-size: 25px;
+    font-family: "roboto";
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #ff0000;
 
+}
+.homepagehead2{
+    font-family: "roboto";
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+.homepagepara1{
+    font-family: "roboto";
+    font-size: 18px;
+    color:black;
 }
