@@ -12,37 +12,47 @@ body {
 }
 
 .navdrop-container{
-    background-color: #094244;
+    background-color: #ffffff;
     
 }
-.navdrop-container-text{
-    color:aliceblue;
-}
-.navbarbackground{
-    background-color: #094244;
-}
-.navbar-textcolors{
-    color:aliceblue
 
+.navdrop-container-text{
+    color:rgb(0, 0, 0);
+    &:hover {
+        color: #000000;
+    }
+}
+
+.navbarbackground{
+    background-color: #ffffff;
+}
+
+.navbar-textcolors{
+    color:rgb(0, 0, 0);
+    &:hover {
+        color: #000000;
+    }
 }
 
 .navbarlogo{
     width: 160px;
     height: 45px;
 }
+
 .homepagehead1{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    color: #ff0000;
-
+    color: #000000;
 }
+
 .homepagehead2{
     font-family: "roboto";
     font-size: 40px;
     font-weight: bold;
     color:rgb(0, 0, 0);
 }
+
 .homepagepara1{
     font-family: "roboto";
     font-size: 18px;
