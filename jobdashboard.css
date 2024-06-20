@@ -10,6 +10,22 @@ body {
 .navbar-nav .dropdown:hover .dropdown-toggle::after {
     transform: rotate(90deg);
 }
+
+.navdrop-container{
+    background-color: #094244;
+    
+}
+.navdrop-container-text{
+    color:aliceblue;
+}
+.navbarbackground{
+    background-color: #094244;
+}
+.navbar-textcolors{
+    color:aliceblue
+
+}
+
 .navbarlogo{
     width: 160px;
     height: 45px;
