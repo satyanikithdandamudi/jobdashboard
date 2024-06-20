@@ -1,0 +1,12 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* CSS to show the dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(90deg);
+}
