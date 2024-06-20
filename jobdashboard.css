@@ -10,3 +10,9 @@ body {
 .navbar-nav .dropdown:hover .dropdown-toggle::after {
     transform: rotate(90deg);
 }
+.homepagehead1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+
+}
