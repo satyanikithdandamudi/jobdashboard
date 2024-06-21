@@ -58,9 +58,12 @@ body {
     font-size: 18px;
     color:black;
 }
+.trending_job_container{
+    background-color: rgb(193, 243, 236);
+}
 .trending_job_mainhead{
     font-family: "roboto";
-    font-size: 50px;
+    font-size: 38px;
     font-weight: bold;
     color:rgb(0, 0, 0);
 
@@ -71,9 +74,16 @@ body {
     padding: 30px;
     border-radius: 10px;
 }
-.trending_job_head1{
+.trending_job1:hover{
+    background-color:#4CAF50;
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    border-color:#ffffff;
+
+}
+.trendingd_job_head1{
     font-family: "roboto";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color:rgb(0, 0, 0);
 
@@ -82,7 +92,7 @@ body {
     font-family: "roboto";
     font-size: 18px;
     color:black;
-    
+
 }
 .trending_job_btn1{
     background-color: #4CAF50;
