@@ -75,7 +75,7 @@ body {
     border-radius: 10px;
 }
 .trending_job1:hover{
-    background-color:#4CAF50;
+    background-color:#85e388;
     transform:scale(1.05);
     transition: 0.3s ease-in-out;
     border-color:#ffffff;
@@ -95,9 +95,8 @@ body {
 
 }
 .trending_job_btn1{
-    background-color: #4CAF50;
+    background-color: #7ba5dc;
     border-style: none;
-    
     padding: 8px;
     border-radius: 10px;
     font-family: "roboto";
