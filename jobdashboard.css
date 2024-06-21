@@ -1,43 +1,220 @@
 body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
-/* CSS to show the dropdown on hover */
-.navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.navbar-nav .dropdown:hover .dropdown-toggle::after {
-    transform: rotate(90deg);
-}
-
-.navdrop-container{
-    background-color: #ffffff;
-    
-}
-
-.navdrop-container-text{
-    color:rgb(0, 0, 0);
-    &:hover {
-        color: #000000;
-    }
-}
-
-.navbarbackground{
+.nav-bar {
+    height: 10vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
     background-color: #ffffff;
 }
 
-.navbar-textcolors{
-    color:rgb(0, 0, 0);
-    &:hover {
-        color: #000000;
+.nav-bar-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-container-options {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    > img {
+        height: 55px;
+        width: 20%;
+        padding-bottom: 15px;
     }
 }
 
-.navbarlogo{
-    width: 160px;
-    height: 45px;
+.nav-links-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
+
+.nav-links-items-list {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    list-style-type: none;
+}
+
+.nav-links-item {
+    padding: 5px;
+    > a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        white-space: nowrap;
+        &:hover {
+            > i{
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+.dropdown-container {
+    position: absolute;
+    z-index: 9999;
+    top: 3vh;
+    left: 1vw;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+.career-dropdown {
+    left: 10vw !important;
+}
+
+.community-dropdown {
+    left: 25vw !important;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    > li {
+        padding: 5px 6px;
+        > a{
+            text-decoration: none;
+            color: black;
+            white-space: nowrap;
+            &:hover {
+                > i {
+                    transform: rotate(90deg);
+                } 
+            }
+        }
+    }
+}
+
+.watch-video-container {
+    > button {
+        white-space: nowrap;
+    }
+}
+
+.dropdown-sub-container {
+    width: 130px;
+    padding: 12px;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: calc(100% + 10px);
+    opacity: 0;
+    visibility: hidden;
+    background-color: beige;
+    > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        > li {
+            padding: 5px;
+            > a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.dropdown-list {
+    > li:hover .dropdown-sub-container {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.nav-links-item:hover .dropdown-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.login-buttons-container {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-section {
+    min-width: 100vw;
+    min-height: 90vh;
+    padding-top: calc(10vh + 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-jobs-container {
+    width: 80%;
+}
+
+.search-input-container {
+    display: flex;
+}
+
+.infinite-scroll {
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10vh;
+    --gap: 90px;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+.infinite-scroll ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+}
+
+.infinite-scroll:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
 
 .homepagehead1{
     font-family: "roboto";
