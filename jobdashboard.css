@@ -66,10 +66,23 @@ body {
 
 }
 .trending_job1{
-    border-style: solid;
-    border-width: 2px;
-    padding: 20px;
+    border-style:solid;
+    border-width: 1.5px;
+    padding: 30px;
     border-radius: 10px;
+}
+.trending_job_head1{
+    font-family: "roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+
+}
+.trending_job_para1{
+    font-family: "roboto";
+    font-size: 18px;
+    color:black;
+    
 }
 .trending_job_btn1{
     background-color: #4CAF50;
