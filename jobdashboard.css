@@ -239,8 +239,9 @@ body {
     background-color:#ffffff;
 }
 .trending_job_mainhead{
+    padding-top:30px;
     font-family: "roboto";
-    font-size: 40px;
+    font-size: 50px;
     font-weight:bolder;
     color:rgb(0, 0, 0);
 
@@ -283,7 +284,7 @@ body {
 
 }
 .trending_job_btn1{
-    background-color:transparent
+    background-color:transparent;
     border-style: none;
     padding: 8px;
     border-radius: 10px;
