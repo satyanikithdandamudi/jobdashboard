@@ -63,8 +63,8 @@ body {
 }
 .trending_job_mainhead{
     font-family: "roboto";
-    font-size: 38px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight:bolder;
     color:rgb(0, 0, 0);
 
 }
