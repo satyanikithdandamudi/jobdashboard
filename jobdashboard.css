@@ -382,7 +382,7 @@ body {
 .trending_job1:hover {
     transform: scale(1.05);
     border-color: #e15959;
-    background-image: linear-gradient(180deg, transparent 20%, #e15959);
+    background-image: linear-gradient(180deg, transparent 25%, #ff7676);
 }
 .trending_job1:hover > button {
     background-color: #ff3c3c;
@@ -430,7 +430,7 @@ body {
 @media (max-width: 767.98px) {
     .trending_job1 {
         border-color: #e15959;
-        background-image: linear-gradient(180deg, transparent 20%, #e15959);
+        background-image: linear-gradient(180deg, transparent 25%, #e15959);
         transform: scale(1.05);
     }
     .trending_job1 > button {
