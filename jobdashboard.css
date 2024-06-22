@@ -493,7 +493,7 @@ body {
 }
 
 .user-rating-card {
-    height: 60%;
+    height: 70%;
     width: 500px;
     flex-shrink: 0;
     padding: 2rem;
