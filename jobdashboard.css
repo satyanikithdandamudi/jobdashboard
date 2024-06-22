@@ -406,7 +406,9 @@ body {
     color: black;
     margin-bottom: 50px;
     position: relative; /* To allow the pseudo-element to be positioned relative to this element */
+    z-index: 1; /* Ensure the main text is above the pseudo-element */
 }
+
 .trending_job_para1::after {
     content: "Jobs For Freshers";
     font-family: "Train One", system-ui;
@@ -417,7 +419,13 @@ body {
     top: 22px; /* Adjust as needed */
     left: 3px; /* Adjust as needed */
     z-index: -1;
+    transition: transform 0.3s ease; /* Add transition for smooth movement */
 }
+
+.trending_job_para1:hover::after {
+    transform: translateX(20px); /* Adjust the value to control the movement */
+}
+
 .trending_job_btn1 {
     background-color: transparent;
     border-style: none;
