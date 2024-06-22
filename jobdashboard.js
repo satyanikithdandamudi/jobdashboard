@@ -94,7 +94,7 @@ function changePlaceholderText() {
     index = (index + 1) % placeholderTextArray.length;
 }
 
-setInterval(changePlaceholderText, 1000);
+setInterval(changePlaceholderText, 2000);
 
 // location input element 
 
