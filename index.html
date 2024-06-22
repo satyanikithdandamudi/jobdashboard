@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="jobdashboard.css">
-    <script src="https://kit.fontawesome.com/e04d293875.js" crossorigin="anonymous"></script>
     <title>Job Dashboard</title>
 </head>
 
@@ -20,7 +19,7 @@
                     <ul class="nav-links-items-list">
                         <li class="nav-links-item">
                             <a href="#">Job 
-                                <i class="fa-solid fa-caret-down"></i>
+                                <img class="drop-down-img" src="assets/dropdown.png"/>
                             </a>
                             <div class="dropdown-container">
                                 <ul class="dropdown-list">
@@ -33,12 +32,12 @@
                                 
                                 <!-- line break -->
                                 
-                                <hr/>
+                                <hr style="width:1px;border-width:0;background-color:gray;height: 130px;">
 
                                 <ul class="dropdown-list">
                                     <li>
                                         <a href="#">Work From Home 
-                                            <i class="fa-solid fa-caret-down"></i>
+                                            <img class="drop-down-img" src="assets/dropdown.png"/>
                                         </a>
                                         <div class="dropdown-sub-container">
                                             <ul>
@@ -59,7 +58,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Work From Home 
-                                            <i class="fa-solid fa-caret-down"></i>
+                                            <img class="drop-down-img" src="assets/dropdown.png"/>
                                         </a>
                                         <div class="dropdown-sub-container">
                                             <ul>
@@ -80,7 +79,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Work From Home 
-                                            <i class="fa-solid fa-caret-down"></i>
+                                            <img class="drop-down-img" src="assets/dropdown.png"/>
                                         </a>
                                         <div class="dropdown-sub-container">
                                             <ul>
@@ -101,7 +100,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Work From Home
-                                            <i class="fa-solid fa-caret-down"></i>
+                                            <img class="drop-down-img" src="assets/dropdown.png"/>
                                         </a>
                                         <div class="dropdown-sub-container">
                                             <ul>
@@ -122,7 +121,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Work From Home
-                                            <i class="fa-solid fa-caret-down"></i>
+                                            <img class="drop-down-img" src="assets/dropdown.png"/>
                                         </a>
                                         <div class="dropdown-sub-container">
                                             <ul>
@@ -146,7 +145,7 @@
                         </li>
                         <li class="nav-links-item">
                             <a href="#">Career Compass 
-                                <i class="fa-solid fa-caret-down"></i>
+                                <img class="drop-down-img" src="assets/dropdown.png"/>
                             </a>
                             <div class="dropdown-container career-dropdown">
                                 <ul class="dropdown-list">
@@ -156,7 +155,7 @@
                                     <li><a href="#">Work From Home</a></li>
                                     <li><a href="#">Work From Home</a></li>
                                 </ul>
-                                <hr/>
+                                <hr style="width:1px;border-width:0;background-color:gray;height: 130px;"/>
                                 <div class="watch-video-container">
                                     <img src="" alt=""/>
                                     <button>Watch video</button>
@@ -165,14 +164,14 @@
                         </li>
                         <li class="nav-links-item">
                             <a href="#">Community 
-                                <i class="fa-solid fa-caret-down"></i>
+                                <img class="drop-down-img" src="assets/dropdown.png"/>
                             </a>
                             <div class="dropdown-container community-dropdown">
                                 <ul class="dropdown-list">
                                     <li><a href="#">Work From Home</a></li>
                                     <li><a href="#">Work From Home</a></li>
                                 </ul>
-                                <hr/>
+                                <hr style="width:1px;border-width:0;background-color:gray;height: 130px;"/>
                                 <div class="watch-video-container">
                                     <img src="" alt=""/>
                                     <button>Watch video</button>
@@ -183,30 +182,42 @@
                 </div>
             </div>
             <div class="login-buttons-container">
-                <button>Employer Login</button>
-                <button>Candidate Login</button>
+                <button class="employer-btn">Employer Login</button>
+                <button class="candidate-btn">Candidate Login</button>
             </div>
         </div>
     </nav>
     <!-- Home section -->
     <div class="home-section">
+
+        <!-- search section -->
         <div class="search-jobs-container">
             <h1>INDIA'S #1 OB PLATFORM</h1>
             <h1>Your job search ends here</h1>
             <p>Discover 50 lakh+ career opportunities</p>
             <div class="search-input-container">
-                <i class="fa-light fa-magnifying-glass"></i>
-                <input class="search-input-el"/>
-                <hr/>
-                <p>
-                    <i class="fa-thin fa-location-dot"></i> Locate your Job
-                </p>
-                <button>Search Job</button>
+                <img src="assets/search.png"/>
+                <input type="search" class="search-input-el"/>
+                <hr style="width:1px;border-width:0;background-color:gray;height: 60%"/>
+                <img src="assets/location.png" class="location-img"/> 
+                <input type="text" class="options-input-el" placeholder="Search for an area or city" />
+                <button class="clear-text-locationIn-btn">x</button>
+                <!-- <select class="location-options-dropdown">
+                    <option>abc</option>
+                    <option>gfsg</option>
+                    <option>sdfsd</option>
+                    <option>dsfasdg</option>
+                    <option>fdgfsd</option>
+                    <option>rreyhdf</option>
+                </select> -->
+                <button class="search-jobs-btn">Search Job</button>
             </div>
         </div>
+
+        <!-- infinite scroll -->
         <div class="infinite-scroll">
-            <ul>
-              <li>
+            <ul class="infinite-scroll-list-items">
+              <!-- <li>
                 <span>abc</span>
                 <span>Placed</span>
               </li>
@@ -245,10 +256,10 @@
               <li>
                 <span>abc</span>
                 <span>Placed</span>
-              </li>
+              </li> -->
             </ul>
-            <ul aria-hidden="true">
-                <li>
+            <ul aria-hidden="true" class="infinite-scroll-list-items">
+                <!-- <li>
                     <span>abc</span>
                     <span>Placed</span>
                   </li>
@@ -287,13 +298,12 @@
                   <li>
                     <span>abc</span>
                     <span>Placed</span>
-                  </li>
+                  </li> -->
             </ul>
         </div>
-
-       
     </div>
 
+    <!-- trending section -->
    <div class="trending_job_container pt-5 pb-5">
     <div class="container">
         <div class="row"> 
@@ -381,7 +391,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="jobdashboard.js"></script>
 </body>
 
 </html>
