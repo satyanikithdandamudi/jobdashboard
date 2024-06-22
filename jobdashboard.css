@@ -386,18 +386,20 @@ body {
     transform: scale(1.05);
     border-color: #e15959;
     background-image: linear-gradient(180deg, transparent 25%, #ff7676);
+    
 }
 .trending_job1:hover > button {
-    background-color: #ff3c3c;
+    background-color:#ff5252;
     color: aliceblue;
     border-style: none;
 }
 .trending_job_head1 {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+    font-weight: normal;
+    color: rgb(149, 149, 149);
     margin-bottom: 20px;
+    margin-top:10px;
     position: relative;
 }
 .trending_job_para1 {
@@ -409,15 +411,17 @@ body {
     position: relative; /* To allow the pseudo-element to be positioned relative to this element */
     z-index: 1; /* Ensure the main text is above the pseudo-element */
 }
-
+.trending_job_para1:hover{
+    color:#ff5252
+}
 .trending_job_para1::after {
     content: "Jobs For Freshers";
     font-family: "Train One", system-ui;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 26px; /* Adjust as needed */
+    top: 28px; /* Adjust as needed */
     left: 3px; /* Adjust as needed */
     z-index: -1;
     transition: transform 0.3s ease; /* Add transition for smooth movement */
@@ -425,7 +429,8 @@ body {
 
 .trending_job_para1:hover::after {
     transform: translateX(15px); /* Adjust the value to control the movement */
-}
+    
+    }
 
 .trending_job_btn1 {
     background-color: transparent;
