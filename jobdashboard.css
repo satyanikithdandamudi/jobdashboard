@@ -397,26 +397,31 @@ body {
     margin-bottom: 20px;
     position: relative;
 }
-.trendingd_job_head1{
-    font-family: "roboto";
-    font-size: 20px;
+.trending_job_para1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
     font-weight: bold;
     color: black;
     margin-bottom: 50px;
-    position: relative;
+    position: relative; /* To allow the pseudo-element to be positioned relative to this element */
 }
-.trending_job_para1{
-    font-family: "roboto";
-    font-size: 18px;
-    color:black;
-
+.trending_job_para1::after {
+    content: "Jobs For Freshers";
+    font-family: "Train One", system-ui;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 22px; /* Adjust as needed */
+    left: 3px; /* Adjust as needed */
+    z-index: -1;
 }
 .trending_job_btn1 {
     background-color: transparent;
     border-style: none;
     padding: 8px;
     border-radius: 10px;
-    font-family: "roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     color: black;
 }
@@ -434,8 +439,7 @@ body {
         border-style: none;
     }
     .trending_job_para1::after {
-        content: "Jobs For Freshers"; /* Ensure content is set */
-        display: block; /* Ensure pseudo-element is visible */
+        display: block;
     }
 }
 
