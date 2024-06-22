@@ -393,6 +393,10 @@ body {
     color: aliceblue;
     border-style: none;
 }
+.trending_job1:hover > p{
+    color:#fe6969;
+}
+
 .trending_job_head1 {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -411,9 +415,8 @@ body {
     position: relative; /* To allow the pseudo-element to be positioned relative to this element */
     z-index: 1; /* Ensure the main text is above the pseudo-element */
 }
-.trending_job_para1:hover{
-    color:#ff5252
-}
+
+
 .trending_job_para1::after {
     content: "Jobs For Freshers";
     font-family: "Train One", system-ui;
