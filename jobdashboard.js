@@ -96,6 +96,8 @@ function changePlaceholderText() {
 
 setInterval(changePlaceholderText, 1000);
 
+// location input element 
+
 const optionsInputEl = document.querySelector('.options-input-el');
 const clearTextLocationInBtn = document.querySelector('.clear-text-locationIn-btn');
 
