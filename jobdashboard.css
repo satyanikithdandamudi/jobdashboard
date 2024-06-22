@@ -562,6 +562,74 @@ body {
     font-size: 16px;
 }
 
+/* Employer section */
+
+.employer-section {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 4rem 0;
+}
+
+.employer-card {
+    background-color: rgb(234,248,244);
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 1rem 2rem 0 2rem;
+    border-radius: 12px;
+    border: 0.5px solid rgb(206, 206, 206);
+}
+
+.employer-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.employer-theme {
+    color: rgb(31,130,104);
+    font-size: 21px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: rgb(227, 246, 240);
+    border-radius: 4px;
+    width: fit-content;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.employer-want-text {
+    font-weight: 700;
+    color: rgb(6, 101, 76);
+    font-size: 41px;
+}
+
+.employer-para {
+    font-size: 19px;
+}
+
+.post-btn {
+    display: block;
+    width: 50%;
+    border: 1.7px solid rgb(6, 101, 76);
+    padding: 0.5rem 0;
+    outline: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-weight: 600;
+    &:hover {
+        background-color: rgb(6, 101, 76);
+        color: #ffffff;
+    }
+}
+
+.employer-img {
+    height: 400px;
+}
+
 /* Media query for small and extra-small devices */
 @media (max-width: 767.98px) {
 
