@@ -418,7 +418,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     color: black;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     position: relative; /* To allow the pseudo-element to be positioned relative to this element */
     z-index: 1; /* Ensure the main text is above the pseudo-element */
 }
@@ -429,7 +429,7 @@ body {
     font-size: 41px;
     color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 25px; /* Adjust as needed to align with the main text */
+    top: 23px; /* Adjust as needed to align with the main text */
     left:11px;
     right:0;
     margin: 0 auto;
