@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    outline: none;
 }
 
 /* Home section styling */
@@ -286,7 +287,125 @@ body {
     z-index: 1; /* Ensure image stays on top */
 }
 
+/* job opening section */
 
+.job-opening-container {
+    background-color: rgb(244,242,246);
+    width: 100vw;
+    height: 90vh;
+    margin: 2rem 0;
+    margin-bottom: 7rem;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job-opening-heading {
+    font-size: 37px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.job-opening-company-cards-container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    padding: 0 5rem;
+    overflow-x: auto !important;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.job-opening-company-card {
+    background-color: #ffffff;
+    border-radius: 9px;
+    border: 0.5px solid rgb(228, 225, 225);
+    flex-shrink: 0;
+    padding: 2rem;
+    width: 400px;
+    > img {
+        height: 80px;
+        width: 90px;
+    }
+    &:hover .job-opening-company-button {
+            background-color: rgb(31,130,104);
+            color: #ffffff;
+    }
+}
+
+.job-opening-company-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-opening-company-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.job-opening-company-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: rgb(31,130,104);
+    outline: none !important;
+}
+
+.job-opening-scroll-progress-container {
+    background-color: rgb(209,206,212);
+    align-self: center;
+    width: 60px;
+    height: 8px;
+    border-radius: 6px;
+    margin: 3rem 0;
+    position: relative;
+}
+
+.job-opening-scroll {
+    background-color: rgb(31,130,104);
+    width: 25px;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    transition: left 0.1s linear;
+}
+
+.job-opening-viewallBtn {
+    margin-top: 3rem;
+    background-color: transparent;
+    padding: 0.5rem 6rem;
+    font-weight: 500;
+    font-size: 21px;
+    border-radius: 8px;
+    color: rgb(31,130,104);
+    border: 2px solid rgb(31,130,104) !important;
+    outline: none !important;
+    &:hover {
+        background-color: rgb(31,130,104);
+        color: #ffffff;
+    }
+}
+
+/* trending job roles section */
+
+.trending-job-roles-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+}
 
 /* rating section */
 
@@ -510,6 +629,7 @@ body {
     }
 }
 
+/* oberseve this */
 
 .gg-trending-card {
     height: 100px;
@@ -523,7 +643,6 @@ body {
     overflow: hidden;
 }
 
-/* oberseve this */
 
 .gg-trending-card-para {
     position: absolute;

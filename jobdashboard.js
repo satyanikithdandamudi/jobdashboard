@@ -111,3 +111,25 @@ clearTextLocationInBtn.addEventListener('click', () => {
     optionsInputEl.value = '';
     clearTextLocationInBtn.style.visibility = 'hidden';
 });
+
+// scroll progress bar
+
+const jobOpeningCompanyCardsContainer = document.querySelector('.job-opening-company-cards-container');
+
+const jobOpeningScrollProgressContainer = document.querySelector('.job-opening-scroll-progress-container');
+
+const jobOpeningScroll = document.querySelector(".job-opening-scroll");
+
+jobOpeningCompanyCardsContainer.addEventListener('scroll', () => {
+    const scrollLeft = jobOpeningCompanyCardsContainer.scrollLeft;
+    // console.log(scrollLeft);
+    const scrollWidth = jobOpeningCompanyCardsContainer.scrollWidth - jobOpeningCompanyCardsContainer.clientWidth;
+    const scrollPercentage = (scrollLeft/scrollWidth) * 100;
+    // console.log(scrollPercentage);
+    const mainProgressBarWidth = jobOpeningScrollProgressContainer.clientWidth
+    const progressBarWidth = jobOpeningScroll.clientWidth
+    const maxLeft = mainProgressBarWidth - progressBarWidth
+    const leftPosition = (scrollPercentage/100) * maxLeft
+    // console.log(leftPosition)
+    jobOpeningScroll.style.left = leftPosition + 'px';
+});
