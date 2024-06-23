@@ -429,9 +429,9 @@ body {
     font-size: 41px;
     color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 35px; /* Adjust as needed to align with the main text */
-    left: 0;
-    right: 0;
+    top: 25px; /* Adjust as needed to align with the main text */
+    left:11px;
+    right:0;
     margin: 0 auto;
     z-index: -1;
     transition: transform 0.3s ease; /* Add transition for smooth movement */
@@ -440,7 +440,7 @@ body {
 }
 
 .trending_job1:hover .trending_job_para1::after {
-    transform: translateX(-15px); /* Adjust the value to control the movement */
+    transform: translateX(-35px); /* Adjust the value to control the movement */
 }
 
 .trending_job_img1 {
