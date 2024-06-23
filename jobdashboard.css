@@ -511,3 +511,26 @@ body {
 }
 
 
+.gg-trending-card {
+    height: 100px;
+    width: 400px;
+    margin: 10rem auto;
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* oberseve this */
+
+.gg-trending-card-para {
+    position: absolute;
+    right: -50px;
+    transition: all 0.5s ease-in;
+}
+
+.gg-trending-card:hover .gg-trending-card-para {
+    right: 20%;
+}
