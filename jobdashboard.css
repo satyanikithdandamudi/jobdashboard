@@ -413,8 +413,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     font-weight: bold;
+    
+
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     position: relative; /* To allow the pseudo-element to be positioned relative to this element */
     z-index: 1; /* Ensure the main text is above the pseudo-element */
 }
@@ -422,13 +424,11 @@ body {
 .trending_job_para1::after {
     content: "Jobs For Freshers";
     font-family: "Cinzel", serif;
-
-    
-    font-size: 35px;
+    font-size: 41px;
     color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 28px; /* Adjust as needed */
-    left: 3px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
     z-index: -1;
     transition: transform 0.3s ease; /* Add transition for smooth movement */
 }
