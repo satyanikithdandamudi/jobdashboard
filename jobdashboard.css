@@ -439,9 +439,11 @@ body {
 }
 
 .quotes-img {
-    display: block;
-    height: 80px;
-    width: 80px;
+    background-color: rgb(167,206,196);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 28px;
 }
 
 .user-rating-container {
