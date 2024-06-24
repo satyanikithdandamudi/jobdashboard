@@ -205,19 +205,64 @@ body {
     overflow: hidden; /* Ensure content doesn't overflow the container */
 }
 
-.trending_job1:hover {
+.t_j_1:hover {
     border-color: #ca4242;
-    background-image: linear-gradient(180deg, transparent 45%, #f1b0b0);
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, hsla(0, 61%, 83%, 1) 100%);
 }
 
-.trending_job1:hover .trending_job_btn1 {
+.t_j_1:hover .trending_job_btn1 {
     background-color: #ca4242;
     color: aliceblue;
     border-style: none;
 }
 
-.trending_job1:hover .trending_job_para1 {
+.t_j_1:hover .trending_job_para1 {
     color: #ca4242;
+}
+
+.t_j_2:hover {
+    border-color: #4d2cc4;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, rgb(165, 148, 216) 100%);
+}
+
+.t_j_2:hover .trending_job_btn1 {
+    background-color: #4d2cc4;
+    color: aliceblue;
+    border-style: none;
+}
+
+.t_j_2:hover .trending_job_para1 {
+    color: #4d2cc4;
+}
+
+.t_j_3:hover {
+    border-color: #21962d;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, rgb(148, 216, 158) 100%);
+}
+
+.t_j_3:hover .trending_job_btn1 {
+    background-color: #21962d;
+    color: aliceblue;
+    border-style: none;
+}
+
+.t_j_3:hover .trending_job_para1 {
+    color: #21962d;
+}
+
+.t_j_4:hover {
+    border-color: #1f3bb5;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, rgb(143, 167, 231) 100%);
+}
+
+.t_j_4:hover .trending_job_btn1 {
+    background-color: #1f3bb5;
+    color: aliceblue;
+    border-style: none;
+}
+
+.t_j_4:hover .trending_job_para1 {
+    color: #1f3bb5;
 }
 
 .trending_job_head1 {
@@ -227,7 +272,6 @@ body {
     color: rgb(149, 149, 149);
     margin-bottom: 20px;
     margin-top: 10px;
-    position: relative;
 }
 
 .trending_job_para1 {
@@ -242,18 +286,18 @@ body {
 
 .trending-job-para2{
     font-family: "Roboto", sans-serif;
-    font-size: 65px;
+    font-size: 61px;
     font-weight: bold;
     position: absolute;
     white-space: nowrap; 
-    right: -160px;
+    right: -190px;
     color: white;
     background-color: transparent;
     text-shadow: -1px -1px 0 #b7b7b7, 1px -1px 0 #b7b7b7, -1px 1px 0 #b7b7b7, 1px 1px 0 #b7b7b7;
     transition: all 0.4s ease-in;
 }
 .trending_job1:hover .trending-job-para2{
-    right: -120px;
+    right: -100px;
 }
 
 .trending_job_img1 {
@@ -321,8 +365,8 @@ body {
         width: 90px;
     }
     &:hover .job-opening-company-button {
-            background-color: rgb(31,130,104);
-            color: #ffffff;
+        background-color: rgb(31,130,104);
+        color: #ffffff;
     }
 }
 
