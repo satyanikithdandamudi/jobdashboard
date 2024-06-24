@@ -253,7 +253,7 @@ body {
     transition: all 0.5s ease-in;
 }
 .trending_job1:hover .trending-job-para2{
-    right:1px;
+    right:-75px;
 }
 
 .trending_job_img1 {
