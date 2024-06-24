@@ -144,8 +144,7 @@ body {
     }
     > p {
         height: 100%;
-        margin-top: auto;
-        flex-wrap: wrap;
+        padding-top: 0.4rem;
         align-self: center;
         font-size: 16px;
         font-weight: 500;
@@ -207,19 +206,18 @@ body {
 }
 
 .trending_job1:hover {
-    transform: scale(1.05);
-    border-color: #e15959;
-    background-image: linear-gradient(180deg, transparent 25%, #ff7676);
+    border-color: #ca4242;
+    background-image: linear-gradient(180deg, transparent 45%, #f1b0b0);
 }
 
 .trending_job1:hover .trending_job_btn1 {
-    background-color: #ff5252;
+    background-color: #ca4242;
     color: aliceblue;
     border-style: none;
 }
 
 .trending_job1:hover .trending_job_para1 {
-    color: #fe6969;
+    color: #ca4242;
 }
 
 .trending_job_head1 {
@@ -248,17 +246,19 @@ body {
     font-weight: bold;
     position: absolute;
     white-space: nowrap; 
-    right: -140px;
-    color: gray;
-    transition: all 0.5s ease-in;
+    right: -160px;
+    color: white;
+    background-color: transparent;
+    text-shadow: -1px -1px 0 #b7b7b7, 1px -1px 0 #b7b7b7, -1px 1px 0 #b7b7b7, 1px 1px 0 #b7b7b7;
+    transition: all 0.4s ease-in;
 }
 .trending_job1:hover .trending-job-para2{
-    right:-75px;
+    right: -120px;
 }
 
 .trending_job_img1 {
-    height: 170px;
-    width: 170px;
+    height: 215px;
+    width: 215px;
     position: absolute;
     bottom: 0px;
     right: 2px;
@@ -394,6 +394,54 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 10rem 0;
+}
+
+.trending-job-roles-infinite-scroll-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --gap: 35px;
+    gap: var(--gap);
+    overflow: hidden;
+    &:hover .trending-job-roles-infinite-scroll-list-items{
+        animation-play-state: paused;
+    }
+}
+
+.trending-job-roles-infinite-scroll-list-items {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: var(--gap);
+    animation: trendScroll 20s linear infinite;
+}
+
+@keyframes trendScroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.trending-job-roles-list {
+    width: 200px;
+    border: 0.5px solid rgb(229, 224, 224);
+    padding: 12px 21px;
+    border-radius: 9px;
+    > p:nth-child(1) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+    > p:nth-child(2) {
+        padding-top: 10px;
+        color: rgb(143, 141, 146);
+        margin-bottom: 0;
+    }
 }
 
 /* rating section */
@@ -618,29 +666,4 @@ body {
     .trending_job_para1::after {
         display: block;
     }
-}
-
-/* oberseve this */
-
-.gg-trending-card {
-    height: 100px;
-    width: 400px;
-    margin: 10rem auto;
-    border: 1px solid gray;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.gg-trending-card-para {
-    position: absolute;
-    right: -50px;
-    transition: all 0.5s ease-in;
-}
-
-.gg-trending-card:hover .gg-trending-card-para {
-    right: 20%;
 }
