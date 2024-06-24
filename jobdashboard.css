@@ -79,7 +79,7 @@ body {
 
 .clear-text-locationIn-btn {
     color: grey;
-    outline: none;
+    outline: none !important;
     background-color: transparent;
     border: none;
     font-size: 22px;

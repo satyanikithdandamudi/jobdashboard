@@ -133,3 +133,9 @@ jobOpeningCompanyCardsContainer.addEventListener('scroll', () => {
     // console.log(leftPosition)
     jobOpeningScroll.style.left = leftPosition + 'px';
 });
+
+// trending job opening infinite scroll section
+
+const trendingJobInfiniteScrollList = [
+    {}
+]
