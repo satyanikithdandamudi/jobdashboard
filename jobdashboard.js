@@ -133,3 +133,123 @@ jobOpeningCompanyCardsContainer.addEventListener('scroll', () => {
     // console.log(leftPosition)
     jobOpeningScroll.style.left = leftPosition + 'px';
 });
+
+// trending job opening infinite scroll section
+
+const trendingJobInfiniteScrollList = [
+    {
+        imgUrl: '',
+        jobText: 'Nurse / Patient Care',
+        numText: '115 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Interior Designer',
+        numText: '119 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Beautician / Hair Stylist',
+        numText: '119 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Labour / Factory Worker',
+        numText: '122 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Hospitality/ Hotel/ Event Management',
+        numText: '169 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Machine Operator',
+        numText: '186 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Office Help / Peon',
+        numText: '186 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Software / Web Developer',
+        numText: '204 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Housekeeping',
+        numText: '217 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Counsellor (Career / Visa)',
+        numText: '247 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Civil Engineer / Architect',
+        numText: '249 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Graphic Designer',
+        numText: '272 openings'
+    },
+    {
+        imgUrl: '',
+        jobText: 'Computer / Data Entry Operator / COPA',
+        numText: '315 openings'
+    },
+]
+
+const trendingJobScrollEl = document.querySelectorAll('.trending-job-roles-infinite-scroll-list-items');
+
+trendingJobInfiniteScrollList.map((item) => {
+    const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.classList.add('trending-job-roles-list');
+    const paraText_1 = document.createElement('p');
+    const paraText_2 = document.createElement('p');
+    paraText_1.textContent = `${item.jobText}`;
+    paraText_2.textContent = `${item.numText}`;
+    trendingJobScrollListEl.appendChild(paraText_1);
+    trendingJobScrollListEl.appendChild(paraText_2);
+    trendingJobScrollEl[0].appendChild(trendingJobScrollListEl);
+});
+
+trendingJobInfiniteScrollList.map((item) => {
+    const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.classList.add('trending-job-roles-list')
+    const paraText_1 = document.createElement('p');
+    const paraText_2 = document.createElement('p');
+    paraText_1.textContent = `${item.jobText}`;
+    paraText_2.textContent = `${item.numText}`;
+    trendingJobScrollListEl.appendChild(paraText_1);
+    trendingJobScrollListEl.appendChild(paraText_2);
+    trendingJobScrollEl[1].appendChild(trendingJobScrollListEl);
+});
+
+trendingJobInfiniteScrollList.map((item) => {
+    const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.classList.add('trending-job-roles-list')
+    const paraText_1 = document.createElement('p');
+    const paraText_2 = document.createElement('p');
+    paraText_1.textContent = `${item.jobText}`;
+    paraText_2.textContent = `${item.numText}`;
+    trendingJobScrollListEl.appendChild(paraText_1);
+    trendingJobScrollListEl.appendChild(paraText_2);
+    trendingJobScrollEl[2].appendChild(trendingJobScrollListEl);
+});
+
+trendingJobInfiniteScrollList.map((item) => {
+    const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.classList.add('trending-job-roles-list')
+    const paraText_1 = document.createElement('p');
+    const paraText_2 = document.createElement('p');
+    paraText_1.textContent = `${item.jobText}`;
+    paraText_2.textContent = `${item.numText}`;
+    trendingJobScrollListEl.appendChild(paraText_1);
+    trendingJobScrollListEl.appendChild(paraText_2);
+    trendingJobScrollEl[3].appendChild(trendingJobScrollListEl);
+});
