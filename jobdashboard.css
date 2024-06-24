@@ -124,7 +124,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: var(--gap);
-    animation: scroll 25s linear infinite;
+    animation: scroll 35s linear infinite;
 }
 
 .infinite-scroll-list {
@@ -460,7 +460,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
     gap: var(--gap);
-    animation: trendScroll 20s linear infinite;
+    animation: trendScroll 45s linear infinite;
 }
 
 @keyframes trendScroll {
