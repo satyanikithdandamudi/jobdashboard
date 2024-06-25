@@ -267,14 +267,41 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 10vh;
+    background-color: rgba(255, 255, 255, 0.319);
+    /* backdrop-filter: blur(10px); */
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-section::before {
+    position: absolute;
+    left: -5%;
+    top: 8%;
+    content: '';
+    background-image: radial-gradient(closest-side, rgba(255, 243, 134, 0.21), #fff);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.home-section::after {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    content: '';
+    background-image: radial-gradient(closest-side, rgba(148, 112, 255, 0.21), #fff);
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    z-index: -2;
+    overflow: hidden;
 }
 
 .search-jobs-container {
     width: 80%;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    z-index: 9;
     > h1:nth-child(1) {
         color: rgb(31 130 104);
         font-weight: 700;
@@ -292,30 +319,6 @@ body {
         font-weight: 500;
         margin-bottom: 2rem;
     }
-}
-
-.search-jobs-container::before {
-    position: absolute;
-    left: -25%;
-    top: 30%;
-    content: '';
-    background-image: radial-gradient(closest-side, rgba(255, 230, 0, 0.21), #fff);
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    z-index: -2;
-}
-
-.search-jobs-container::after {
-    position: absolute;
-    right: -20%;
-    top: 60%;
-    content: '';
-    background-image: radial-gradient(closest-side, rgba(64, 0, 255, 0.21), #fff);
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    z-index: -2;
 }
 
 .search-input-container {
@@ -405,7 +408,8 @@ body {
 }
 
 .infinite-scroll-list {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
+    border: 0.8px solid #e0e0e0;
     padding: 10px 10px;
     width: 210px;
     height: 70px;
@@ -751,6 +755,7 @@ body {
     border: 0.5px solid rgb(229, 224, 224);
     padding: 12px 21px;
     border-radius: 9px;
+    cursor: pointer;
     > p:nth-child(1) {
         white-space: nowrap;
         overflow: hidden;
@@ -763,6 +768,30 @@ body {
         color: rgb(143, 141, 146);
         margin-bottom: 0;
     }
+}
+
+.list-hover-1 {
+    border-color: #ca4242;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 32%, rgb(241, 199, 199) 100%);
+    color: #ca4242;
+}
+
+.list-hover-2 {
+    border-color: #4d2cc4;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 32%, rgb(199, 186, 238) 100%);
+    color: #4d2cc4;
+}
+
+.list-hover-3 {
+    border-color: #21962d;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 32%, rgb(169, 224, 177) 100%);
+    color: #21962d;
+}
+
+.list-hover-4 {
+    border-color: #3754d6;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 18%, rgb(180, 194, 232) 100%);
+    color: #3754d6;
 }
 
 /* rating section */

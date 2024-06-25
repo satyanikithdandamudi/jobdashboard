@@ -204,10 +204,26 @@ const trendingJobInfiniteScrollList = [
     },
 ]
 
+const hoverListDiffColors = [
+    'list-hover-1', 'list-hover-2', 'list-hover-3' 
+]
+
 const trendingJobScrollEl = document.querySelectorAll('.trending-job-roles-infinite-scroll-list-items');
 
 trendingJobInfiniteScrollList.map((item) => {
     const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.addEventListener('mouseenter', () => {
+        const randomValue = Math.floor(Math.random() * hoverListDiffColors.length);
+        trendingJobScrollListEl.classList.add(`${hoverListDiffColors[randomValue]}`)
+    });
+    trendingJobScrollListEl.addEventListener('mouseleave', () => {
+        for(let i = 0; i < hoverListDiffColors.length; i++){
+            // console.log(trendingJobScrollListEl.classList[1] === hoverListDiffColors[i]);
+            if(trendingJobScrollListEl.classList[1] === hoverListDiffColors[i]){
+                trendingJobScrollListEl.classList.remove(hoverListDiffColors[i]);
+            }
+        }
+    });
     trendingJobScrollListEl.classList.add('trending-job-roles-list');
     const paraText_1 = document.createElement('p');
     const paraText_2 = document.createElement('p');
@@ -220,6 +236,17 @@ trendingJobInfiniteScrollList.map((item) => {
 
 trendingJobInfiniteScrollList.map((item) => {
     const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.addEventListener('mouseenter', () => {
+        const randomValue = Math.floor(Math.random() * hoverListDiffColors.length);
+        trendingJobScrollListEl.classList.add(`${hoverListDiffColors[randomValue]}`)
+    });
+    trendingJobScrollListEl.addEventListener('mouseleave', () => {
+        for(let i = 0; i < hoverListDiffColors.length; i++){
+            if(trendingJobScrollListEl.classList[1] === hoverListDiffColors[i]){
+                trendingJobScrollListEl.classList.remove(hoverListDiffColors[i]);
+            }
+        }
+    });
     trendingJobScrollListEl.classList.add('trending-job-roles-list')
     const paraText_1 = document.createElement('p');
     const paraText_2 = document.createElement('p');
@@ -232,6 +259,17 @@ trendingJobInfiniteScrollList.map((item) => {
 
 trendingJobInfiniteScrollList.map((item) => {
     const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.addEventListener('mouseenter', () => {
+        const randomValue = Math.floor(Math.random() * hoverListDiffColors.length);
+        trendingJobScrollListEl.classList.add(`${hoverListDiffColors[randomValue]}`)
+    });
+    trendingJobScrollListEl.addEventListener('mouseleave', () => {
+        for(let i = 0; i < hoverListDiffColors.length; i++){
+            if(trendingJobScrollListEl.classList[1] === hoverListDiffColors[i]){
+                trendingJobScrollListEl.classList.remove(hoverListDiffColors[i]);
+            }
+        }
+    });
     trendingJobScrollListEl.classList.add('trending-job-roles-list')
     const paraText_1 = document.createElement('p');
     const paraText_2 = document.createElement('p');
@@ -244,6 +282,17 @@ trendingJobInfiniteScrollList.map((item) => {
 
 trendingJobInfiniteScrollList.map((item) => {
     const trendingJobScrollListEl = document.createElement('li');
+    trendingJobScrollListEl.addEventListener('mouseenter', () => {
+        const randomValue = Math.floor(Math.random() * hoverListDiffColors.length);
+        trendingJobScrollListEl.classList.add(`${hoverListDiffColors[randomValue]}`)
+    });
+    trendingJobScrollListEl.addEventListener('mouseleave', () => {
+        for(let i = 0; i < hoverListDiffColors.length; i++){
+            if(trendingJobScrollListEl.classList[1] === hoverListDiffColors[i]){
+                trendingJobScrollListEl.classList.remove(hoverListDiffColors[i]);
+            }
+        }
+    });
     trendingJobScrollListEl.classList.add('trending-job-roles-list')
     const paraText_1 = document.createElement('p');
     const paraText_2 = document.createElement('p');
