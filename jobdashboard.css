@@ -60,6 +60,7 @@ body {
     justify-content: space-between;
     position: relative;
     list-style-type: none;
+    margin-bottom: 0 !important;
 }
 
 .nav-links-item {
@@ -69,10 +70,13 @@ body {
         text-decoration: none;
         font-size: 20px;
         white-space: nowrap;
-        &:hover {
-            > img {
-                transform: rotate(90deg);
-            }
+    }
+}
+
+.nav-links-item:hover {
+    > a {
+        > img {
+            transform: rotate(90deg);
         }
     }
 }
@@ -83,20 +87,27 @@ body {
 }
 
 .dropdown-container {
-    width: fit-content;
-    height: fit-content;
     position: absolute;
     z-index: 9999;
-    margin-top: 3px;
-    top: 3vh;
+    top: calc(3vh + 25px);
     left: 1vw;
     opacity: 0;
     visibility: hidden;
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(220, 220, 220);
     padding: 13px;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.dropdown-container::before {
+    content: '';
+    height: 23px;
+    position: absolute;
+    width: 100%;
+    top: -20px;
 }
 
 .career-dropdown {
@@ -109,17 +120,15 @@ body {
 
 .dropdown-list {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     > li {
-        padding: 5px 6px;
         > a{
             text-decoration: none;
             color: black;
+            padding: 5px 4px;
             white-space: nowrap;
-            &:hover {
-                > img {
-                    transform: rotate(90deg);
-                } 
-            }
         }
     }
 }
@@ -130,18 +139,45 @@ body {
     }
 }
 
+.dropdown-sub-list {
+    list-style-type: none;
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    > li {
+        > a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 4px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.dropdown-sub-list {
+    > li:hover {
+        > a {
+            > img {
+                transform: rotate(90deg);
+            } 
+        }
+    }
+}
+
 .dropdown-sub-container {
-    width: 130px;
     padding: 12px;
     position: absolute;
     z-index: 9999;
+    left: calc(100% + 35px);
     top: 0;
-    left: calc(100% + 10px);
     opacity: 0;
     visibility: hidden;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(227, 227, 227);
+    display: flex;
+    border-radius: 10px;
     > ul {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,13 +188,30 @@ body {
             > a {
                 text-decoration: none;
                 color: black;
+                white-space: nowrap;
             }
         }
     }
 }
 
-.dropdown-list {
+.dropdown-sub-container::before {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 100%;
+    left: calc(-20% - 25px);
+    top: 0;
+}
+
+.dropdown-sub-list {
     > li:hover .dropdown-sub-container {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.dropdown-sub-list {
+    > li:hover .dropdown-container {
         opacity: 1;
         visibility: visible;
     }
@@ -177,17 +230,30 @@ body {
     align-items: center;
     gap: 14px;
     > button {
-        border: 0 solid grey;
-        font-size: 16px;
         cursor: pointer;
         padding: 8px;
         white-space: nowrap;
         border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 0 solid grey;
+        outline: none !important;
     }
 }
 
+.employer-btn {
+    color: rgb(31 130 104);
+    background-color: transparent;
+}
+
 .candidate-btn {
-    background-color: #85e388;
+    background-color: rgb(31 130 104);
+    color: #ffffff;
+    &:hover {
+        border: 1px solid rgb(31 130 104) ;
+        background-color: transparent;
+        color: rgb(31 130 104);
+    }
 }
 
 /* Home section styling */
@@ -205,6 +271,10 @@ body {
 
 .search-jobs-container {
     width: 80%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9;
     > h1:nth-child(1) {
         color: rgb(31 130 104);
         font-weight: 700;
@@ -224,6 +294,30 @@ body {
     }
 }
 
+.search-jobs-container::before {
+    position: absolute;
+    left: -25%;
+    top: 30%;
+    content: '';
+    background-image: radial-gradient(closest-side, rgba(255, 230, 0, 0.21), #fff);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.search-jobs-container::after {
+    position: absolute;
+    right: -20%;
+    top: 60%;
+    content: '';
+    background-image: radial-gradient(closest-side, rgba(64, 0, 255, 0.21), #fff);
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
 .search-input-container {
     height: 60px;
     display: inline-flex;
@@ -231,6 +325,7 @@ body {
     border: 1px solid gainsboro;
     padding: 0 12px;
     border-radius: 8px;
+    background-color: #ffffff;
     > img:nth-child(1) {
         height: 26px;
         padding-right: 10px;
@@ -291,7 +386,7 @@ body {
     font-size: 15px;
     width: 100%;
     overflow: hidden;
-    padding-top: 40vh;
+    padding-top: 37vh;
     --gap: 90px;
     display: flex;
     justify-content: space-between;
@@ -433,18 +528,18 @@ body {
 }
 
 .t_j_4:hover {
-    border-color: #1f3bb5;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, rgb(143, 167, 231) 100%);
+    border-color: #3754d6;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 18%, rgb(160, 182, 242) 100%);
 }
 
 .t_j_4:hover .trending_job_btn1 {
-    background-color: #1f3bb5;
+    background-color: #3754d6;
     color: aliceblue;
     border-style: none;
 }
 
 .t_j_4:hover .trending_job_para1 {
-    color: #1f3bb5;
+    color: #3754d6;
 }
 
 .trending_job_head1 {
